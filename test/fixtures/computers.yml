@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  pc: MyString
+  name: MyString
+  number: MyString
+  department: MyString
+  user: MyString
+  city: MyString
+  date: 2012-05-21
+  product: MyString
+  cpu: MyString
+  memory: MyString
+  disk: MyString
+  mouse: 1
+  wired: MyString
+  wife: MyString
+  sn: MyString
+  os: MyString
+  token: 1
+  other: MyString
+
+two:
+  type: 
+  pc: MyString
+  name: MyString
+  number: MyString
+  department: MyString
+  user: MyString
+  city: MyString
+  date: 2012-05-21
+  product: MyString
+  cpu: MyString
+  memory: MyString
+  disk: MyString
+  mouse: 1
+  wired: MyString
+  wife: MyString
+  sn: MyString
+  os: MyString
+  token: 1
+  other: MyString

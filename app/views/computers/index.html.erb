@@ -1,0 +1,59 @@
+<h1>GDS计算机资产统计</h1>
+
+<table>
+  <tr>
+    <th>类别</th>
+    <th>计算机名</th>
+    <th>名称</th>
+    <th>资产编号</th>
+    <th>使用部门</th>
+    <th>使用人</th>
+    <th>城市</th>
+    <th>生产日期</th>
+    <th>品牌型号规格</th>
+    <th>Cpu</th>
+    <th>内存</th>
+    <th>硬盘</th>
+    <th>鼠标</th>
+    <th>有线网卡Mac地址</th>
+    <th>无线网卡Mac地址</th>
+    <th>S/N</th>
+    <th>预装操作系统</th>
+    <th>令牌</th>
+    <th>备注</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @computers.each do |computer| %>
+  <tr>
+    <td><%= computer.type %></td>
+    <td><%= computer.pc %></td>
+    <td><%= computer.name %></td>
+    <td><%= computer.number %></td>
+    <td><%= computer.department %></td>
+    <td><%= computer.user %></td>
+    <td><%= computer.city %></td>
+    <td><%= computer.date %></td>
+    <td><%= computer.product %></td>
+    <td><%= computer.cpu %></td>
+    <td><%= computer.memory %></td>
+    <td><%= computer.disk %></td>
+    <td><%= computer.mouse %></td>
+    <td><%= computer.wired %></td>
+    <td><%= computer.wife %></td>
+    <td><%= computer.sn %></td>
+    <td><%= computer.os %></td>
+    <td><%= computer.token %></td>
+    <td><%= computer.other %></td>
+    <td><%= link_to 'Show', computer %></td>
+    <td><%= link_to 'Edit', edit_computer_path(computer) %></td>
+    <td><%= link_to 'Destroy', computer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '新增', new_computer_path %>
