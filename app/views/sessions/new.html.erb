@@ -6,15 +6,15 @@
       <fieldset>
         <legend>管理员登录：</legend>
         <div>
-          <label for="name">Name:</label>
+          <label for="name">用户名:</label>
           <%= text_field_tag :name, params[:name] %>
         </div>
         <div>
-          <label for="password">Password:</label>
+          <label for="password">密码:</label>
           <%= password_field_tag :password, params[:password] %>
         </div>
         <div>
-          <%= submit_tag "Login" %>
+          <%= submit_tag "登录" %>
         </div>
       </fieldset>
   <% end %>
