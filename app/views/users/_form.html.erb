@@ -13,17 +13,17 @@
       <% end %>
 
       <fieldset>
-        <legend>管理员</legend>
+        <legend>管理员注册</legend>
         <div>
-          <%= f.label :name, '管理员名' %>:
+          <%= f.label :name, 'Name' %>
           <%= f.text_field :name, :size => 40 %>
         </div>
         <div>
-          <%= f.label :password, 'Password', '密码' %>:
+          <%= f.label :password, 'Password' %>
           <%= f.password_field :password, :size => 40 %>
         </div>
         <div>
-          <%= f.label :password_confirmation, 'Confirm', '重复密码' %>:
+          <%= f.label :password_confirmation, 'Confirm'%>
           <%= f.password_field :password_confirmation, :size => 40 %>
         </div>
         <div>

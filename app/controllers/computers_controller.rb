@@ -81,4 +81,12 @@ class ComputersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def select_db
+    if @computer = Computer.where("pc = ?", params[:pc])
+      render :action => "select_show"
+
+    end
+  end
 end
+

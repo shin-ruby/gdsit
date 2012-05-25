@@ -19,6 +19,10 @@ Gdsit::Application.routes.draw do
 
   resources :computers
 
+  post "computers/select_db"
+
+  get "computers/select_show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

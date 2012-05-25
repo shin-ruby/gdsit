@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :type, '类别' %><br />
-    <%= f.text_field :type %>
+    <%= f.label :leixing, '类别' %><br />
+    <%= f.text_field :leixing %>
   </div>
   <div class="field">
     <%= f.label :pc, '计算机名' %><br />
@@ -61,7 +61,7 @@
   </div>
   <div class="field">
     <%= f.label :mouse, '鼠标' %><br />
-    <%= f.number_field :mouse %>
+    <%= f.select :mouse, [['有',1],['无',0]], {:include_blank=>true,:selected=>0} %>
   </div>
   <div class="field">
     <%= f.label :wired, '有线网卡Mac地址' %><br />
