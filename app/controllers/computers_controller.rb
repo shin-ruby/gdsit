@@ -83,10 +83,9 @@ class ComputersController < ApplicationController
   end
 
   def select_db
-    if @computer = Computer.where("pc = ?", params[:pc])
+    if
+      @computer = Computer.where(params[:select_a] => params[:select_c])
       render :action => "select_show"
-
     end
   end
 end
-

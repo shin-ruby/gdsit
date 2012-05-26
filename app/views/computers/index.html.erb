@@ -3,8 +3,8 @@
 
 <p>
 <%= form_tag "computers/select_db" do %>
-    计算机名：
-    <%= text_field_tag [:pc] %>
+    <%= select_tag :select_a, "<option value='pc'>计算机名</option><option value='user'>使用人</option><option value='department'>部门</option><option value='sn'>S/N</option>".html_safe %>
+    <%= text_field_tag [:select_c] %>
     <%= submit_tag (value = "查询") %>
 <% end %>
 </p>
@@ -64,5 +64,6 @@
 </table>
 
 <br />
-
+<div class="btn">
 <%= link_to '新增', new_computer_path %>
+</div>
